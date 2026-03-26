@@ -48,4 +48,7 @@ class RandomColorCubit extends Cubit<RandomColorState> {
   Future<void> copyHexToClipboard() async {
     await _clipboard.copy(state.color.hexCode);
   }
+  Future<void> copyRgbToClipboard() async {
+    await _clipboard.copy(state.color.rgbCode);
+  }
 }

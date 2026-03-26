@@ -12,7 +12,7 @@ class ColorRgbValueTextWidget extends StatelessWidget {
     );
     return InkWell(
       onTap: ()async{
-        await context.read<RandomColorCubit>().copyHexToClipboard();
+        await context.read<RandomColorCubit>().copyRgbToClipboard();
         if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
