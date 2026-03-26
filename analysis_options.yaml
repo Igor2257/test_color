@@ -1,0 +1,14 @@
+include: package:solid_lints/analysis_options.yaml
+
+analyzer:
+  # Можно исключить генерируемые файлы, если используете build_runner
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    # Здесь можно переопределить или добавить специфичные правила
+    prefer_const_constructors: true
+    avoid_print: true
+    public_member_api_docs: false # Отключает обязательную документацию
